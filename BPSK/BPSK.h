@@ -15,8 +15,8 @@
 #include <time.h>
 #define PI 3.1415926535898
 
-extern void BPSKmodeled(int* inputSeq, double* modeledSeq, int Lenth);
-extern void BPSKdemodeled(double* modeledSeq, int* outputSeq, int Lenth);
+void BPSKmodeled(int* inputSeq, double* modeledSeq, int Lenth);
+void BPSKdemodeled(double* modeledSeq, int* outputSeq, int Lenth);
 
 
 #endif /* BPSK_h */

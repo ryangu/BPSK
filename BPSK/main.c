@@ -6,11 +6,11 @@
 //  Copyright © 2015年 huasheng gu. All rights reserved.
 //
 
-#include"BPSK.c"
-#include"Sequence.c"
+#include"BPSK.h"
+#include"Sequence.h"
 #define N 10000
 
-extern void AWGN(double* modedP,double* receivedP,double SNR,int L);
+void AWGN(double* modedP,double* receivedP,double SNR,int L);
 
 
 int main()
@@ -52,7 +52,7 @@ int main()
         ber[count] = errorbit/totalbit;
     }
     
-    if((fp=fopen("BERresult.txt","w"))==NULL)
+    if((fp=fopen("BERresult.txt","w")) == NULL)
         printf("can't open the file!\n");
     else
         for(i=0;i<SNRnum;i++)
