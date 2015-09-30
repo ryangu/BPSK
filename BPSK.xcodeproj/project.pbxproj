@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		03FDB6BD1BBC0CF300749F5A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 03FDB6BC1BBC0CF300749F5A /* main.c */; };
+		03FDB6C81BBC182B00749F5A /* BPSK.c in Sources */ = {isa = PBXBuildFile; fileRef = 03FDB6C61BBC182B00749F5A /* BPSK.c */; settings = {ASSET_TAGS = (); }; };
+		03FDB6CB1BBC1A0C00749F5A /* Sequence.c in Sources */ = {isa = PBXBuildFile; fileRef = 03FDB6C91BBC1A0C00749F5A /* Sequence.c */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		03FDB6B91BBC0CF300749F5A /* BPSK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BPSK; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FDB6BC1BBC0CF300749F5A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		03FDB6C61BBC182B00749F5A /* BPSK.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BPSK.c; sourceTree = "<group>"; };
+		03FDB6C71BBC182B00749F5A /* BPSK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPSK.h; sourceTree = "<group>"; };
+		03FDB6C91BBC1A0C00749F5A /* Sequence.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Sequence.c; sourceTree = "<group>"; };
+		03FDB6CA1BBC1A0C00749F5A /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
+		03FDB6CC1BBC1F6500749F5A /* BERresult.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BERresult.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +64,12 @@
 		03FDB6BB1BBC0CF300749F5A /* BPSK */ = {
 			isa = PBXGroup;
 			children = (
+				03FDB6CC1BBC1F6500749F5A /* BERresult.txt */,
+				03FDB6C61BBC182B00749F5A /* BPSK.c */,
+				03FDB6C71BBC182B00749F5A /* BPSK.h */,
 				03FDB6BC1BBC0CF300749F5A /* main.c */,
+				03FDB6C91BBC1A0C00749F5A /* Sequence.c */,
+				03FDB6CA1BBC1A0C00749F5A /* Sequence.h */,
 			);
 			path = BPSK;
 			sourceTree = "<group>";
@@ -118,6 +130,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FDB6CB1BBC1A0C00749F5A /* Sequence.c in Sources */,
+				03FDB6C81BBC182B00749F5A /* BPSK.c in Sources */,
 				03FDB6BD1BBC0CF300749F5A /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +249,7 @@
 				03FDB6C21BBC0CF300749F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
